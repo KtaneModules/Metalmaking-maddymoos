@@ -1,0 +1,24 @@
+{
+  "Author": "Cooldoom5",
+  "Compatibility": "Compatible",
+  "Contributors": {
+    "Audio": [ "Q Entertainment" ],
+    "Developer": [ "Cooldoom5" ],
+    "Manual": [
+      "Cooldoom5",
+      "The Metamo Ark"
+    ]
+  },
+  "DefuserDifficulty": "Hard",
+  "Description": "Craft a metal using 5 surrounding blocks. TAGS: 9-square, Orbit, Meteos",
+  "ExpertDifficulty": "Hard",
+  "ModuleID": "metalmaking",
+  "Name": "Metalmaking",
+  "Origin": "Mods",
+  "Published": "2022-03-27",
+  "SortKey": "METALMAKING",
+  "SourceUrl": "insert",
+  "SteamID": "steamid",
+  "Symbol": "Mtl",
+  "Type": "Regular"
+}

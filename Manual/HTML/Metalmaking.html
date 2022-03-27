@@ -1,0 +1,613 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+ <meta name="viewport" content="initial-scale=1">
+    <title>Metalmaking — Keep Talking and Nobody Explodes Module</title>
+     <link rel="stylesheet" type="text/css" href="css/font.css">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/ktane-utils.js"></script>
+ <style>
+.dark {
+            background-color: #000000;
+   border-bottom: 3px solid #000;
+   color: #FFFFFF;
+        }
+  table {
+  width: 100%;
+}
+td {
+  text-align: center;
+}
+            body.dark, body {
+                background: url('image/space-background.jpg');
+            }
+</style>
+<script>
+window.addEventListener('DOMContentLoaded', () =>
+        {
+let names = [
+                'Geolytian', 'Firimian', 'Oleanan', 'Anasazean', 'Grannestian', 'Megadomer', 'Luna=Lunarian', 'Bavoomian', 'Freazer','Boggobian','Jeljelian','Mekksian','Forter','Dawndusian','Starriing','Lastaral','Gigagusher','Meteorian',
+    'Yoojic', 'Hevendorian', 'Suburbionite', 'Hottedian', 'Vubblian', 'Layazeroan', 'Floriasian', 'Brabbiter', 'Wuudite', 'Wiralon', 'Gravitase', 'Caviousian', 'Thirnovas', 'Globinite'
+   ];
+   let types = 
+   [
+    'air', 'fire', 'H2O', 'iron', 'herb', 'glow', 'dark', 'zap', 'zoo', 'soil'
+   ];
+   let rare =
+   [
+    'Soul', 'Time'
+   ];
+            let str = '...You’re telling me I need *' + names[(Math.random() * names.length) | 0] + '* ' + types[(Math.random() * types.length) | 0] + ' to fuse ' + rare[(Math.random() * rare.length) | 0] + '?!';
+   document.getElementsByClassName('flavour-text')[0].innerText = str;
+   });</script>
+</head>
+
+<body>
+
+        <div class="section">
+            <div class="page page-bg-01">
+                <div class="page-header">
+                    <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                    <span class="page-header-section-title">Metalmaking</span>
+                </div>
+                <div class="page-content">
+                    <img src="img/Component/Metalmaking.svg" class="diagram">
+                    <h2>On the Subject of Metalmaking</h2>
+                    <p class="flavour-text"></p>
+     <p>You have 8 meteos, and a goal - make a rare meteo.</p>
+     <p>To make a rare meteo, you need to incinerate 5 different meteos to forge it.</p>
+     <p>Each rare meteo has different needs for the incinerated meteos to correctly forge into it.</p>
+     <ul>
+     <li><img src="image/Soul.gif" width="20" height="20"><b><i>Soul</i></b> meteos require a big and hot combination, while being of low mass.</li>
+     <li><img src="image/Time.gif" width="20" height="20"><b><i>Time</i></b> meteos require a high mass and big combination, while being cooler.</li>
+     <li><img src="image/Chi.png" width="20" height="20"><b><i>Chi</i></b> meteos require a hot and high mass combination, while being small.</li>
+     </ul>
+     <p>Each of the 8 meteos on the module has these three features - Heat, Mass, and Volume.</p>
+     <p>The next two tables' values, when multiplied together, will give each meteo these three values.</p>
+     <p>Find a set of 5 meteos where each sequential value for the rare metal is at least 12 below the last after all 5 are summed.</p><p><i>IE: A Soul with 36 Volume, 24 Heat, and 12 Mass</i></p>
+     <p class="appendix-reference">See Appendix M3T305 for Meteo identification reference.</p>
+     
+     <table>
+     <tr>
+     <td>Meteos</td>
+     <td>Heat</td>
+     <td>Mass</td>
+     <td>Volume</td>
+     <td>Meteos</td>
+     <td>Heat</td>
+     <td>Mass</td>
+     <td>Volume</td>
+     </tr>
+     <tr>
+     <td style="background-color:#FFFFFF80">Air</td>
+     <td>1</td>
+     <td>0.5</td>
+     <td>3</td>
+     <td style="background-color:#FF000080">Fire</td>
+     <td>3</td>
+     <td>1</td>
+     <td>1.5</td>
+     </tr>
+     <tr>
+     <td style="background-color:#0000FF80">H2O</td>
+     <td>0.5</td>
+     <td>1.5</td>
+     <td>3</td>
+     <td style="background-color:#C1642080">Soil</td>
+     <td>0.5</td>
+     <td>3</td>
+     <td>2</td>
+     </tr>
+     <tr>
+     <td style="background-color:#6B0FBC80">Iron</td>
+     <td>1.5</td>
+     <td>2</td>
+     <td>2</td>
+     <td style="background-color:#FFFF0080">Zap</td>
+     <td>2</td>
+     <td>0.5</td>
+     <td>2</td>
+     </tr>
+     <tr>
+     <td style="background-color:#00AA0080">Herb</td>
+     <td>1.5</td>
+     <td>1</td>
+     <td>3</td>
+     <td style="background-color:#CF34D380">Zoo</td>
+     <td>1</td>
+     <td>3</td>
+     <td>0.5</td>
+     </tr>
+     <tr>
+     <td style="background-color:#88FF8880">Glow</td>
+     <td>2.5</td>
+     <td>2</td>
+     <td>1</td>
+     <td style="background-color:#50077A80">Dark</td>
+     <td>1</td>
+     <td>3</td>
+     <td>0.5</td>
+     </tr>
+     </table>
+     <br>
+     <p><i>Tables continue on next page...</i></p>
+                   
+                </div>
+                <div class="page-footer relative-footer">Page 1 of 2</div>
+    </div><div class="page page-bg-01">
+    <div class="page-header">
+                    <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                    <span class="page-header-section-title">Metalmaking</span>
+                </div>
+    <div class="page-content">
+    <p>For planets in pairs, if the number of batteries is odd, use the right one, otherwise use the left.</p>
+                   <table >
+     <tr>
+     <td>Set #</td>
+     <td>Planet</td>
+     <td>Heat</td>
+     <td>Mass</td>
+     <td>Volume</td>
+     <td>Planet</td>
+     <td>Heat</td>
+     <td>Mass</td>
+     <td>Volume</td>
+     </tr>
+     <tr>
+     <td>Set 1</td>
+     <td>Geolyte</td>
+     <td>1.5</td>
+     <td>3.5</td>
+     <td>3.5</td>
+     <td>Yooj</td>
+     <td>2</td>
+     <td>1.5</td>
+     <td>5</td>
+     </tr>
+     <tr>
+     <td>Set 2</td>
+     <td>Firim</td>
+     <td>5</td>
+     <td>2</td>
+     <td>1.5</td>
+     <td>Hevendor</td>
+     <td>1</td>
+     <td>3.5</td>
+     <td>4</td>
+     </tr>
+     <tr>
+     <td>Set 3</td>
+     <td>Oleana</td>
+     <td>1</td>
+     <td>4</td>
+     <td>3.5</td>
+     <td>Suburbion</td>
+     <td>2</td>
+     <td>5</td>
+     <td>1.5</td>
+     </tr>
+     <tr>
+     <td>Set 4</td>
+     <td>Anasaze</td>
+     <td>3.5</td>
+     <td>2.5</td>
+     <td>2.5</td>
+     <td colspan="4"></td>
+     </tr>
+     <tr>
+     <td>Set 5</td>
+     <td>Grannest</td>
+     <td>2</td>
+     <td>2</td>
+     <td>4.5</td>
+     <td>Hotted</td>
+     <td>5</td>
+     <td>1</td>
+     <td>2.5</td>
+     </tr>
+     <tr>
+     <td>Set 6</td>
+     <td>Megadom</td>
+     <td>4.5</td>
+     <td>1.5</td>
+     <td>2.5</td>
+     <td>Vubble</td>
+     <td>1</td>
+     <td>0.5</td>
+     <td>3.5</td>
+     </tr>
+     <tr>
+     <td>Set 7</td>
+     <td>Luna=Luna</td>
+     <td>1</td>
+     <td>0.5</td>
+     <td>1.5</td>
+     <td>Layazero</td>
+     <td>4</td>
+     <td>0.5</td>
+     <td>4</td>
+     </tr>
+     <tr>
+     <td>Set 8</td>
+     <td>Bavoom</td>
+     <td>3</td>
+     <td>1.5</td>
+     <td>4</td>
+     <td>Florias</td>
+     <td>3</td>
+     <td>2</td>
+     <td>3.5</td>
+     </tr><tr>
+     <td>Set 9</td>
+     <td>Freaze</td>
+     <td>0.5</td>
+     <td>4</td>
+     <td>4</td>
+     <td colspan="4"></td>
+     </tr>
+     <tr>
+     <td>Set 10</td>
+     <td>Boggob</td>
+     <td>3</td>
+     <td>3</td>
+     <td>2.5</td>
+     <td>Brabbit</td>
+     <td>3.5</td>
+     <td>0.5</td>
+     <td>4.5</td>
+     </tr>
+     <tr>
+     <td>Set 11</td>
+     <td>Jeljel</td>
+     <td>5</td>
+     <td>1.5</td>
+     <td>2</td>
+     <td>Wuud</td>
+     <td>1.5</td>
+     <td>2.5</td>
+     <td>4.5</td>
+     </tr>
+     <tr>
+     <td>Set 12</td>
+     <td>Mekks</td>
+     <td>2.5</td>
+     <td>2.5</td>
+     <td>3.5</td>
+     <td>Wiral</td>
+     <td>1.5</td>
+     <td>3</td>
+     <td>4</td>
+     </tr>
+     <tr>
+     <td>Set 13</td>
+     <td>Forte</td>
+     <td>2.5</td>
+     <td>4</td>
+     <td>2</td>
+     <td>Gravitas</td>
+     <td>1</td>
+     <td>5</td>
+     <td>2.5</td>
+     </tr>
+     <tr>
+     <td>Set 14</td>
+     <td>Dawndus</td>
+     <td>4</td>
+     <td>2</td>
+     <td>2.5</td>
+     <td>Cavious</td>
+     <td>3</td>
+     <td>1</td>
+     <td>4.5</td>
+     </tr>
+     <tr>
+     <td>Set 15</td>
+     <td>Starrii</td>
+     <td>3.5</td>
+     <td>2</td>
+     <td>3</td>
+     <td>Thirnova</td>
+     <td>3</td>
+     <td>2.5</td>
+     <td>3</td>
+     </tr>
+     <tr>
+     <td>Set 16</td>
+     <td>Lastar</td>
+     <td>2</td>
+     <td>2.5</td>
+     <td>4</td>
+     <td>Globin</td>
+     <td>4</td>
+     <td>1.5</td>
+     <td>3</td>
+     </tr>
+     <tr>
+     <td>Set 17</td>
+     <td>Gigagush</td>
+     <td>3.5</td>
+     <td>1.5</td>
+     <td>3.5</td>
+     <td colspan="4"></td>
+
+     </tr>
+     <tr>
+     <td>Set 18</td>
+     <td>Meteo</td>
+     <td>4</td>
+     <td>2</td>
+     <td>2.5</td>
+     <td colspan="4"></td>
+     </tr>
+     </table>
+     <p>After you have found the 5 meteos you plan to forge with, you must now find the order in which you must forge them.</p>
+     <p>The first meteo to be forged must heat the forge to be hot enough to use. The hottest meteo you will use will do.</p>
+     <p>Secondly, add the most massive meteo, then thirdly, the most volume.</p>
+     <p>Fourth, forge the first of the remaining two after the hottest, then finally forge the last remaining one.</p>
+     <p>If multiple meteos fit a condition, you may use either.</p>
+                </div>
+                <div class="page-footer relative-footer">Page 2 of 3</div>
+    </div><div class="page page-bg-01">
+    <div class="page-header">
+                    <span class="page-header-doc-title">Keep Talking and Nobody Explodes Mod</span>
+                    <span class="page-header-section-title">Metalmaking</span>
+                </div>
+    <div class="page-content">
+    <h3>Appendix M3T305: Meteo Identification Reference</h3>
+    <table class="dark" style="width:100%">
+      <tr>
+       <th></th>
+       <th>Air</th>
+       <th>Dark</th>
+       <th>Soil</th>
+       <th>Fire</th>
+       <th>Glow</th>
+       <th>Herb</th>
+       <th>Iron</th>
+       <th>H2O</th>
+       <th>Zap</th>
+       <th>Zoo</th>
+      </tr>
+      <tr>
+       <th>Set 1</th>
+       <th><img src="image/GeolyteYooj/Air.png" width="25" height="25"></th>
+       <th><img src="image/GeolyteYooj/Dark.png" width="25" height="25"></th>
+       <th><img src="image/GeolyteYooj/Earth.png" width="25" height="25"></th>
+       <th><img src="image/GeolyteYooj/Fire.png" width="25" height="25"></th>
+       <th><img src="image/GeolyteYooj/Glow.png" width="25" height="25"></th>
+       <th><img src="image/GeolyteYooj/Herb.png" width="25" height="25"></th>
+       <th><img src="image/GeolyteYooj/Metal.png" width="25" height="25"></th>
+       <th><img src="image/GeolyteYooj/Water.png" width="25" height="25"></th>
+       <th><img src="image/GeolyteYooj/Zap.png" width="25" height="25"></th>
+       <th><img src="image/GeolyteYooj/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 2</th>
+       <th><img src="image/Firim/Air.png" width="25" height="25"></th>
+       <th><img src="image/Firim/Dark.png" width="25" height="25"></th>
+       <th><img src="image/Firim/Earth.png" width="25" height="25"></th>
+       <th><img src="image/Firim/Fire.png" width="25" height="25"></th>
+       <th><img src="image/Firim/Glow.png" width="25" height="25"></th>
+       <th><img src="image/Firim/Herb.png" width="25" height="25"></th>
+       <th><img src="image/Firim/Metal.png" width="25" height="25"></th>
+       <th><img src="image/Firim/Water.png" width="25" height="25"></th>
+       <th><img src="image/Firim/Zap.png" width="25" height="25"></th>
+       <th><img src="image/Firim/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 3</th>
+       <th><img src="image/OleneaSuburbion/Air.png" width="25" height="25"></th>
+       <th><img src="image/OleneaSuburbion/Dark.png" width="25" height="25"></th>
+       <th><img src="image/OleneaSuburbion/Earth.png" width="25" height="25"></th>
+       <th><img src="image/OleneaSuburbion/Fire.png" width="25" height="25"></th>
+       <th><img src="image/OleneaSuburbion/Glow.png" width="25" height="25"></th>
+       <th><img src="image/OleneaSuburbion/Herb.png" width="25" height="25"></th>
+       <th><img src="image/OleneaSuburbion/Metal.png" width="25" height="25"></th>
+       <th><img src="image/OleneaSuburbion/Water.png" width="25" height="25"></th>
+       <th><img src="image/OleneaSuburbion/Zap.png" width="25" height="25"></th>
+       <th><img src="image/OleneaSuburbion/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 4</th>
+       <th><img src="image/Anasaze/Air.png" width="25" height="25"></th>
+       <th><img src="image/Anasaze/Dark.png" width="25" height="25"></th>
+       <th><img src="image/Anasaze/Earth.png" width="25" height="25"></th>
+       <th><img src="image/Anasaze/Fire.png" width="25" height="25"></th>
+       <th><img src="image/Anasaze/Glow.png" width="25" height="25"></th>
+       <th><img src="image/Anasaze/Herb.png" width="25" height="25"></th>
+       <th><img src="image/Anasaze/Metal.png" width="25" height="25"></th>
+       <th><img src="image/Anasaze/Water.png" width="25" height="25"></th>
+       <th><img src="image/Anasaze/Zap.png" width="25" height="25"></th>
+       <th><img src="image/Anasaze/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 5</th>
+       <th><img src="image/GrannestHotted/Air.png" width="25" height="25"></th>
+       <th><img src="image/GrannestHotted/Dark.png" width="25" height="25"></th>
+       <th><img src="image/GrannestHotted/Earth.png" width="25" height="25"></th>
+       <th><img src="image/GrannestHotted/Fire.png" width="25" height="25"></th>
+       <th><img src="image/GrannestHotted/Glow.png" width="25" height="25"></th>
+       <th><img src="image/GrannestHotted/Herb.png" width="25" height="25"></th>
+       <th><img src="image/GrannestHotted/Metal.png" width="25" height="25"></th>
+       <th><img src="image/GrannestHotted/Water.png" width="25" height="25"></th>
+       <th><img src="image/GrannestHotted/Zap.png" width="25" height="25"></th>
+       <th><img src="image/GrannestHotted/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 6</th>
+       <th><img src="image/MegadomVubble/Air.png" width="25" height="25"></th>
+       <th><img src="image/MegadomVubble/Dark.png" width="25" height="25"></th>
+       <th><img src="image/MegadomVubble/Earth.png" width="25" height="25"></th>
+       <th><img src="image/MegadomVubble/Fire.png" width="25" height="25"></th>
+       <th><img src="image/MegadomVubble/Glow.png" width="25" height="25"></th>
+       <th><img src="image/MegadomVubble/Herb.png" width="25" height="25"></th>
+       <th><img src="image/MegadomVubble/Metal.png" width="25" height="25"></th>
+       <th><img src="image/MegadomVubble/Water.png" width="25" height="25"></th>
+       <th><img src="image/MegadomVubble/Zap.png" width="25" height="25"></th>
+       <th><img src="image/MegadomVubble/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 7</th>
+       <th><img src="image/LayazeroLuna=luna/Air.png" width="25" height="25"></th>
+       <th><img src="image/LayazeroLuna=luna/Dark.png" width="25" height="25"></th>
+       <th><img src="image/LayazeroLuna=luna/Earth.png" width="25" height="25"></th>
+       <th><img src="image/LayazeroLuna=luna/Fire.png" width="25" height="25"></th>
+       <th><img src="image/LayazeroLuna=luna/Glow.png" width="25" height="25"></th>
+       <th><img src="image/LayazeroLuna=luna/Herb.png" width="25" height="25"></th>
+       <th><img src="image/LayazeroLuna=luna/Metal.png" width="25" height="25"></th>
+       <th><img src="image/LayazeroLuna=luna/Water.png" width="25" height="25"></th>
+       <th><img src="image/LayazeroLuna=luna/Zap.png" width="25" height="25"></th>
+       <th><img src="image/LayazeroLuna=luna/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 8</th>
+       <th><img src="image/BavoomFlorias/Air.png" width="25" height="25"></th>
+       <th><img src="image/BavoomFlorias/Dark.png" width="25" height="25"></th>
+       <th><img src="image/BavoomFlorias/Earth.png" width="25" height="25"></th>
+       <th><img src="image/BavoomFlorias/Fire.png" width="25" height="25"></th>
+       <th><img src="image/BavoomFlorias/Glow.png" width="25" height="25"></th>
+       <th><img src="image/BavoomFlorias/Herb.png" width="25" height="25"></th>
+       <th><img src="image/BavoomFlorias/Metal.png" width="25" height="25"></th>
+       <th><img src="image/BavoomFlorias/Water.png" width="25" height="25"></th>
+       <th><img src="image/BavoomFlorias/Zap.png" width="25" height="25"></th>
+       <th><img src="image/BavoomFlorias/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 9</th>
+       <th><img src="image/Freaze/Air.png" width="25" height="25"></th>
+       <th><img src="image/Freaze/Dark.png" width="25" height="25"></th>
+       <th><img src="image/Freaze/Earth.png" width="25" height="25"></th>
+       <th><img src="image/Freaze/Fire.png" width="25" height="25"></th>
+       <th><img src="image/Freaze/Glow.png" width="25" height="25"></th>
+       <th><img src="image/Freaze/Herb.png" width="25" height="25"></th>
+       <th><img src="image/Freaze/Metal.png" width="25" height="25"></th>
+       <th><img src="image/Freaze/Water.png" width="25" height="25"></th>
+       <th><img src="image/Freaze/Zap.png" width="25" height="25"></th>
+       <th><img src="image/Freaze/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 10</th>
+       <th><img src="image/BoggobBrabbit/Air.png" width="25" height="25"></th>
+       <th><img src="image/BoggobBrabbit/Dark.png" width="25" height="25"></th>
+       <th><img src="image/BoggobBrabbit/Earth.png" width="25" height="25"></th>
+       <th><img src="image/BoggobBrabbit/Fire.png" width="25" height="25"></th>
+       <th><img src="image/BoggobBrabbit/Glow.png" width="25" height="25"></th>
+       <th><img src="image/BoggobBrabbit/Herb.png" width="25" height="25"></th>
+       <th><img src="image/BoggobBrabbit/Metal.png" width="25" height="25"></th>
+       <th><img src="image/BoggobBrabbit/Water.png" width="25" height="25"></th>
+       <th><img src="image/BoggobBrabbit/Zap.png" width="25" height="25"></th>
+       <th><img src="image/BoggobBrabbit/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 11</th>
+       <th><img src="image/JeljelWuud/Air.png" width="25" height="25"></th>
+       <th><img src="image/JeljelWuud/Dark.png" width="25" height="25"></th>
+       <th><img src="image/JeljelWuud/Earth.png" width="25" height="25"></th>
+       <th><img src="image/JeljelWuud/Fire.png" width="25" height="25"></th>
+       <th><img src="image/JeljelWuud/Glow.png" width="25" height="25"></th>
+       <th><img src="image/JeljelWuud/Herb.png" width="25" height="25"></th>
+       <th><img src="image/JeljelWuud/Metal.png" width="25" height="25"></th>
+       <th><img src="image/JeljelWuud/Water.png" width="25" height="25"></th>
+       <th><img src="image/JeljelWuud/Zap.png" width="25" height="25"></th>
+       <th><img src="image/JeljelWuud/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 12</th>
+       <th><img src="image/MekksWiral/Air.png" width="25" height="25"></th>
+       <th><img src="image/MekksWiral/Dark.png" width="25" height="25"></th>
+       <th><img src="image/MekksWiral/Earth.png" width="25" height="25"></th>
+       <th><img src="image/MekksWiral/Fire.png" width="25" height="25"></th>
+       <th><img src="image/MekksWiral/Glow.png" width="25" height="25"></th>
+       <th><img src="image/MekksWiral/Herb.png" width="25" height="25"></th>
+       <th><img src="image/MekksWiral/Metal.png" width="25" height="25"></th>
+       <th><img src="image/MekksWiral/Water.png" width="25" height="25"></th>
+       <th><img src="image/MekksWiral/Zap.png" width="25" height="25"></th>
+       <th><img src="image/MekksWiral/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 13</th>
+       <th><img src="image/ForteGravitas/Air.png" width="25" height="25"></th>
+       <th><img src="image/ForteGravitas/Dark.png" width="25" height="25"></th>
+       <th><img src="image/ForteGravitas/Earth.png" width="25" height="25"></th>
+       <th><img src="image/ForteGravitas/Fire.png" width="25" height="25"></th>
+       <th><img src="image/ForteGravitas/Glow.png" width="25" height="25"></th>
+       <th><img src="image/ForteGravitas/Herb.png" width="25" height="25"></th>
+       <th><img src="image/ForteGravitas/Metal.png" width="25" height="25"></th>
+       <th><img src="image/ForteGravitas/Water.png" width="25" height="25"></th>
+       <th><img src="image/ForteGravitas/Zap.png" width="25" height="25"></th>
+       <th><img src="image/ForteGravitas/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 14</th>
+       <th><img src="image/CaviousDawndus/Air.png" width="25" height="25"></th>
+       <th><img src="image/CaviousDawndus/Dark.png" width="25" height="25"></th>
+       <th><img src="image/CaviousDawndus/Earth.png" width="25" height="25"></th>
+       <th><img src="image/CaviousDawndus/Fire.png" width="25" height="25"></th>
+       <th><img src="image/CaviousDawndus/Glow.png" width="25" height="25"></th>
+       <th><img src="image/CaviousDawndus/Herb.png" width="25" height="25"></th>
+       <th><img src="image/CaviousDawndus/Metal.png" width="25" height="25"></th>
+       <th><img src="image/CaviousDawndus/Water.png" width="25" height="25"></th>
+       <th><img src="image/CaviousDawndus/Zap.png" width="25" height="25"></th>
+       <th><img src="image/CaviousDawndus/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 15</th>
+       <th><img src="image/StarriiThirnova/Air.png" width="25" height="25"></th>
+       <th><img src="image/StarriiThirnova/Dark.png" width="25" height="25"></th>
+       <th><img src="image/StarriiThirnova/Earth.png" width="25" height="25"></th>
+       <th><img src="image/StarriiThirnova/Fire.png" width="25" height="25"></th>
+       <th><img src="image/StarriiThirnova/Glow.png" width="25" height="25"></th>
+       <th><img src="image/StarriiThirnova/Herb.png" width="25" height="25"></th>
+       <th><img src="image/StarriiThirnova/Metal.png" width="25" height="25"></th>
+       <th><img src="image/StarriiThirnova/Water.png" width="25" height="25"></th>
+       <th><img src="image/StarriiThirnova/Zap.png" width="25" height="25"></th>
+       <th><img src="image/StarriiThirnova/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 16</th>
+       <th><img src="image/GlobinLastar/Air.png" width="25" height="25"></th>
+       <th><img src="image/GlobinLastar/Dark.png" width="25" height="25"></th>
+       <th><img src="image/GlobinLastar/Earth.png" width="25" height="25"></th>
+       <th><img src="image/GlobinLastar/Fire.png" width="25" height="25"></th>
+       <th><img src="image/GlobinLastar/Glow.png" width="25" height="25"></th>
+       <th><img src="image/GlobinLastar/Herb.png" width="25" height="25"></th>
+       <th><img src="image/GlobinLastar/Metal.png" width="25" height="25"></th>
+       <th><img src="image/GlobinLastar/Water.png" width="25" height="25"></th>
+       <th><img src="image/GlobinLastar/Zap.png" width="25" height="25"></th>
+       <th><img src="image/GlobinLastar/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 17</th>
+       <th><img src="image/Gigagush/Air.png" width="25" height="25"></th>
+       <th><img src="image/Gigagush/Dark.png" width="25" height="25"></th>
+       <th><img src="image/Gigagush/Earth.png" width="25" height="25"></th>
+       <th><img src="image/Gigagush/Fire.png" width="25" height="25"></th>
+       <th><img src="image/Gigagush/Glow.png" width="25" height="25"></th>
+       <th><img src="image/Gigagush/Herb.png" width="25" height="25"></th>
+       <th><img src="image/Gigagush/Metal.png" width="25" height="25"></th>
+       <th><img src="image/Gigagush/Water.png" width="25" height="25"></th>
+       <th><img src="image/Gigagush/Zap.png" width="25" height="25"></th>
+       <th><img src="image/Gigagush/Zoo.png" width="25" height="25"></th>
+      </tr>
+      <tr>
+       <th>Set 18</th>
+       <th><img src="image/Meteo/Air.png" width="25" height="25"></th>
+       <th><img src="image/Meteo/Dark.png" width="25" height="25"></th>
+       <th><img src="image/Meteo/Earth.png" width="25" height="25"></th>
+       <th><img src="image/Meteo/Fire.png" width="25" height="25"></th>
+       <th><img src="image/Meteo/Glow.png" width="25" height="25"></th>
+       <th><img src="image/Meteo/Herb.png" width="25" height="25"></th>
+       <th><img src="image/Meteo/Metal.png" width="25" height="25"></th>
+       <th><img src="image/Meteo/Water.png" width="25" height="25"></th>
+       <th><img src="image/Meteo/Zap.png" width="25" height="25"></th>
+       <th><img src="image/Meteo/Zoo.png" width="25" height="25"></th>
+      </tr>
+     </table>
+     </div>
+     <div class="page-footer relative-footer">Page 3 of 3</div>
+    </div>
+            </div>
+</body>
+</html>

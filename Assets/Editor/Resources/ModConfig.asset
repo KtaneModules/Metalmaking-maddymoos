@@ -11,13 +11,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 615501dbe4f3fe94fbf4b564abb10237, type: 3}
   m_Name: ModConfig
   m_EditorClassIdentifier: 
-  id: directionalButton
-  title: Directional Button
+  id: Metalmaking
+  title: Metalmaking
   author: Cooldoom5
-  description: 'This is the one time a Roblox knockoff is good.
+  description: 'A rare metal is a hard to obtain, very rare substance.
+
+    It takes a lot of precision or luck to obtain.
 
 
-    Module ID: directionalButton'
-  version: 1.1
-  outputFolder: E:\Setam\steamapps\common\Keep Talking And Noboty Explodes\mods
-  previewImage: {fileID: 2800000, guid: 9aab404b008a5fd488751e30a7da4b0a, type: 3}
+    You have been provided a booklet, a goal, and 8 meteos we have deemed will be
+    of enough quality to forge the Metal.
+
+
+    We leave you to find the ingredients you need, and forge the metal.
+
+
+    Good Luck.'
+  version: 1
+  outputFolder: D:\Setam\steamapps\common\Keep Talking And Nobody Explodes\mods
+  previewImage: {fileID: 2800000, guid: 9478b1afffd69aa46a1503ce1516a2cd, type: 3}
