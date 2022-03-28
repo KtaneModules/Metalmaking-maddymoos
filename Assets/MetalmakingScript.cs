@@ -66,7 +66,7 @@ public class MetalmakingScript : MonoBehaviour {
 		new float[] {3.5f,2,3 },
 		new float[] {2,2.5f,4 },
 		new float[] {3.5f,1.5f,3.5f },
-		new float[] {4,2,2.5f }
+		new float[] {4.5f,2,2 }
 	};
 	static readonly private float[][] StatsPlanetOdd = new float[][]
 	{
@@ -87,7 +87,7 @@ public class MetalmakingScript : MonoBehaviour {
 		new float[] {3,2.5f,3 },
 		new float[] {4,1.5f,3 },
 		new float[] {3.5f,1.5f,3.5f },
-		new float[] {4,2,2.5f }
+		new float[] {4.5f,2,2 }
 	};
 	static readonly private string[] MeteoNames = { "fire", "air", "H20", "soil","iron","zap","herb","zoo","glow","dark" };
 	static readonly private string[] PlanetNamesEven = { "Geolytian", "Firimian", "Oleanan", "Anasazean", "Grannestian", "Megadomer", "Luna=Lunarian", "Bavoomian", "Freazer","Boggobian","Jeljelian","Mekksian","Forter","Dawndusian","Starriing","Lastaral","Gigagusher","Meteorian" };
