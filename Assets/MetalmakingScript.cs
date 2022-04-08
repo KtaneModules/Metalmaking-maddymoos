@@ -545,7 +545,7 @@ public class MetalmakingScript : MonoBehaviour {
 		bruh = IgnoreNums[0];
 		for (int i = 0; i < 8; i++)
         {
-			if (Indexes.Contains(bruh) && !IgnoreNums2Ele3ctricBoogaloo.Contains(bruh))
+			if (Indexes.Contains(bruh) && Array.IndexOf(Indexes,bruh) < 3)
 				break;
 			bruh++;
 			bruh %= 8;
