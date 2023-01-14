@@ -31,6 +31,6 @@ MonoBehaviour:
     Module ID: metalmaking
 
     Manual can be found on ktane.timwi.de'
-  version: 1.0.3
-  outputFolder: D:\Setam\steamapps\common\Keep Talking And Nobody Explodes\mods
+  version: 1.2.1
+  outputFolder: E:\Setam\steamapps\common\Keep Talking And Nobody Explodes\mods
   previewImage: {fileID: 2800000, guid: 9478b1afffd69aa46a1503ce1516a2cd, type: 3}

@@ -597,7 +597,7 @@ public class MetalmakingScript : MonoBehaviour
 	}
 
 #pragma warning disable 414
-	private readonly string TwitchHelpMessage = @"Use [!{0} numberOne] to highlight the meteo labelled 1. The rest of them are labelled in clowise order. [!{0} forge # # # # #] to select the meteo labelled #. Up to 5 meteos can be forged at the same time.";
+	private readonly string TwitchHelpMessage = @"Use [!{0} numberOne] to highlight the meteo labelled 1. The rest of them are labelled in clockwise order. [!{0} forge # # # # #] to select the meteo labelled #. Up to 5 meteos can be forged at the same time.";
 #pragma warning restore 414
 
 	private IEnumerator ProcessTwitchCommand(string command)
